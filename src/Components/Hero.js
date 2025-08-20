@@ -8,7 +8,7 @@ import billionaire from  "../assets/Billionaire.png";
 import Links from './Links';
 import Project from './Project';
 import Skills from './Skills'; 
-import Experiences from '../UI/Experiences';
+import Experiences from '../Contents/Experiences';
 
 function Hero() {
   return (
@@ -50,15 +50,6 @@ function Hero() {
             tools={['React', 'CSS', 'Javascript']}
             link="https://github.com/Ranjeyan/Portfolio"
           />
-
-          {/* <Project
-            year="2024"
-            image={ProjectImage2}
-            title="Euro 2024 Insights"
-            description="This project aims to leverage Power BI for comprehensive analysis of Euro 2024 football tournament data. The goal is to provide actionable insights and visualizations that can help in understanding team performances, player statistics, match outcomes, and tournament trends."
-            tools={['PowerBI']}
-            link="/demo"
-          /> */}
         </div> 
         <Skills />
         <Experiences /> 

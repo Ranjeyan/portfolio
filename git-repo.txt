@@ -1,1 +1,4 @@
 # to push the content use : "git push origin HEAD:master"
+
+--> git add -A
+--> git commit -m "message"
