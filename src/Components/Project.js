@@ -1,9 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate} from 'react-router-dom';
 import '../Styles/Project.css';
 
 function Project({ year, image, title, description, tools, link }) {
+  const navigate = useNavigate(); 
+
+  const handleClick = (e) => {
+    if (link === "/billionaire_analysis") {
+      e.preventDefault();
+      navigate("/project/billionaire_analysis"); 
+    }
+  };
+
   return (
     <div className="project-item">
       <div className="project-left">
@@ -15,7 +24,7 @@ function Project({ year, image, title, description, tools, link }) {
           <h3>
             {link.startsWith('/') ? (
               <>
-                <Link to={link} className="project-title-link">
+                <Link to={link} className="project-title-link" onClick={handleClick}>
                   <span className="project-title-text">{title}</span>
                 </Link>
                 <span className="arrow">↗</span>

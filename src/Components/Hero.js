@@ -3,10 +3,12 @@ import React from 'react';
 import '../Styles/Hero.css';
 import Ranjeyan from '../assets/profile-pic.jpg';
 import Logo from '../assets/R.png';
-import ProjectImage2 from '../assets/euro.svg';
+// import ProjectImage2 from '../assets/euro.svg';
+import billionaire from  "../assets/Billionaire.png";
 import Links from './Links';
 import Project from './Project';
 import Skills from './Skills'; 
+import Experiences from '../UI/Experiences';
 
 function Hero() {
   return (
@@ -15,7 +17,7 @@ function Hero() {
         <img src={Ranjeyan} alt="Profile" className="profile-image" />
         <div className="profile-info">
           <h1 className="name">Ranjeyan A</h1>
-          <p className="role">Mobile Application Developer(Intern)</p>
+          <p className="role">Mobile Application Developer(Flutter)</p>
           <p className="link">
             <a href="mailto:amranjeyan03@gmail.com">amranjeyan03@gmail.com</a>
           </p>
@@ -26,16 +28,20 @@ function Hero() {
         <div className="about">
           <h2>About</h2>
           <p>
-          Hey👋I am an MSc Data Science student and a Mobile App Developer Intern at Satyukt Analytics. 
-          With expertise in data-driven solutions and app development, I thrive at the intersection of technology and innovation, creating impactful applications
-           to address real-world challenges.</p>
+          Hey👋 I speak fluent data and mobile development! Fresh MSc Data Science graduate currently crafting mobile solutions at Satyukt Analytics. I'm obsessed with finding patterns in chaos and turning them into apps that actually matter—because the best technology is the kind that seamlessly fits into your life.</p>
         </div>
 
-        {/* Skills Section */}
-        <Skills />
 
         <div className="projects">
           <h2>Projects</h2>
+          <Project
+          year='2025'
+          image={billionaire}
+          title='Analysis on World Billionaires Dataset'
+          description='Performed  Data Analysis on the Forbes Billionaires dataset using Python. Cleaned and visualized data with Pandas, Matplotlib, and Seaborn to uncover patterns in wealth distribution, industries, and global demographics.'
+          tools={['Python (Jupyter Notebook)']}
+          link='https://github.com/Ranjeyan/Analysis-on-World-Billionaires-Dataset/blob/main/Analysis%20on%20World%20Billionaires%20Dataset.ipynb'
+          />
           <Project
             year="2024"
             image={Logo}
@@ -45,15 +51,17 @@ function Hero() {
             link="https://github.com/Ranjeyan/Portfolio"
           />
 
-          <Project
+          {/* <Project
             year="2024"
             image={ProjectImage2}
             title="Euro 2024 Insights"
             description="This project aims to leverage Power BI for comprehensive analysis of Euro 2024 football tournament data. The goal is to provide actionable insights and visualizations that can help in understanding team performances, player statistics, match outcomes, and tournament trends."
             tools={['PowerBI']}
             link="/demo"
-          />
-        </div>
+          /> */}
+        </div> 
+        <Skills />
+        <Experiences /> 
         <Links />
       </div>
     </div>

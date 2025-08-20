@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 function ProjectScreen() {
-  const { projectId } = useParams(); // Get the project ID from the URL
+  const { projectId } = useParams();
 
   const renderProjectDetails = () => {
     switch (projectId) {
@@ -20,6 +20,13 @@ function ProjectScreen() {
             <p>This project focuses on providing insights for the Euro 2024 tournament.</p>
           </div>
         );
+        case "Billionaires":
+          return (
+            <div>
+              <h1>Analysis</h1>
+              <p>This project is focused on interactive visualizations using D3.js.</p>
+            </div>
+          );
       default:
         return <p>Project not found.</p>;
     }

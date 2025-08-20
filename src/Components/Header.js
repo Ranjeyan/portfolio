@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/Header.css'; 
 import Logo from '../assets/R.png';
-import Resume from '../assets/Ranjeyan_Resume.pdf'; 
+import Resume from '../assets/RANJEYAN.pdf'; 
 
 function Header() {
   return (

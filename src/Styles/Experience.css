@@ -1,0 +1,76 @@
+/* Experience.css */
+.experiences {
+  margin-bottom: 2rem;
+}
+
+.experiences h2 {
+   font-size: 16px; 
+    font-family: sfpro;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.experience-item {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.experience-left {
+  flex: 0 0 100px;
+  margin-right: 1rem;
+}
+
+.experience-year {
+  font-weight: bold;
+  font-size: 14px;
+  color: gray;
+  font-family: sfpro;
+  font-weight: lighter;
+}
+
+.experience-right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.experience-details {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.experience-role {
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: sfpro;
+  position: relative;
+}
+
+.experience-company {
+  font-size: 1rem;
+  margin: 0 0 0.75rem 0;
+  color: #666;
+  font-weight: 500;
+  font-family: sfpro;
+}
+
+.experience-description {
+  margin: 0 0 6px 0;
+  font-family: sfpro;
+  font-size: 14px;
+  color: #a8a8a8;
+  line-height: 20px;
+  justify-content: flex-end;
+}
+
+.experience-skills {
+  margin: 0;
+  color: #007bff;
+  font-size: 0.8rem;
+  font-family: sfpro;
+}
+
+.skill-dot {
+  margin: 0 0.5rem;
+}
