@@ -4,7 +4,7 @@ import Experience from '../Components/Experience';
 function Experiences() {
   const experienceList = [
     {
-      year: "2024(Dec)-Present",
+      year: "2024(Dec)- 2025(Oct)",
       role: "Mobile Application Developer",
       company: "Satyukt Analytics",
       description: "Developing mobile applications with the Flutter framework, creating cross-platform solutions with seamless API integration.",

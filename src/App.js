@@ -5,7 +5,7 @@ import Demo from './Components/Demo';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Ranjeyan from '../src/assets/R.png';
-import ProjectScreen from './Components/ProjectScreen';
+
 
 function Loader() {
   return (
@@ -37,7 +37,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Hero />} />
               <Route path="/demo" element={<Demo />} />
-              <Route path="/project/:projectId" element={<ProjectScreen />} /> 
             </Routes>
           </>
         )}
